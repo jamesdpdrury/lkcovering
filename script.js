@@ -59,9 +59,9 @@ window.addEventListener('message', function(event) {
     document.getElementById("swing14").innerHTML = '<div class="name">' + (convertNewlinesToBreaks(data.swing14offname || '')) + '</div><div class="role">' + (convertNewlinesToBreaks(data.swing14offrole || '')) + '</div><div class="cover">' + (convertNewlinesToBreaks(data.swing14offcover || ''));
     document.getElementById("swing15").innerHTML = '<div class="name">' + (convertNewlinesToBreaks(data.swing15offname || '')) + '</div><div class="role">' + (convertNewlinesToBreaks(data.swing15offrole || '')) + '</div><div class="cover">' + (convertNewlinesToBreaks(data.swing15offcover || ''));
     document.getElementById("swing16").innerHTML = '<div class="name">' + (convertNewlinesToBreaks(data.swing16offname || '')) + '</div><div class="role">' + (convertNewlinesToBreaks(data.swing16offrole || '')) + '</div><div class="cover">' + (convertNewlinesToBreaks(data.swing16offcover || ''));
-    document.getElementById("walkingCover1").innerHTML = (convertNewlinesToBreaks(data.walkignCover1 || ''));
-    document.getElementById("walkingCover2").innerHTML = (convertNewlinesToBreaks(data.walkignCover2 || ''));
-    document.getElementById("walkingCover3").innerHTML = (convertNewlinesToBreaks(data.walkignCover3 || ''));
+    document.getElementById("walkingCover1").innerHTML = (convertNewlinesToBreaks(data.walkingCover1 || ''));
+    document.getElementById("walkingCover2").innerHTML = (convertNewlinesToBreaks(data.walkingCover2 || ''));
+    document.getElementById("walkingCover3").innerHTML = (convertNewlinesToBreaks(data.walkingCover3 || ''));
     document.getElementById("fds1").innerHTML = (convertNewlinesToBreaks(data.fds1 || ''));
     document.getElementById("fds2").innerHTML = (convertNewlinesToBreaks(data.fds2 || ''));
     document.getElementById("fds3").innerHTML = (convertNewlinesToBreaks(data.fds3 || ''));
