@@ -86,8 +86,8 @@ footer {
 .grey {
     background-color: #cccccc;
 }
-.hide {
-    display: none;
+.display_splits {
+    display: block!important;
 }
 .holder {
     width: 100%;
@@ -219,6 +219,7 @@ line-height: 1.1;
 box-shadow: 0px 0px 19px -5px #000000;
 position: relative;
 line-height: 1.1;
+display: none;
 }
 .standbys {
     border-bottom: solid 1px;
