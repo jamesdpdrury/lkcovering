@@ -8,9 +8,15 @@ window.addEventListener('message', function(event) {
  if (typeof data === 'object' && data !== null) {
     // Update the content of the divs with the received data
     document.getElementById("covering").innerHTML = (data.covering || '');
- 
-  
+    const splitsEl = document.getElementById("splits");
 
+// Add the status to the element's class list (safely handles multiple classes)
+if (data.status) {
+  splitsEl.classList.add(data.status);
+}
+
+// Set the content if needed
+splitsEl.innerHTML = data.splits || '';
 
   }
 });
@@ -23,6 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.reload();
     }, 120000);
 });
+
+const coveringEl = document.getElementById("covering");
+const splitsEl = document.getElementById("splits");
+
+
 
 
 
