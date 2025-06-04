@@ -16,7 +16,16 @@ background-image: url(Background.jpg);
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
+animation: scroll-cycle 60s ease-in-out infinite;
 }
+@keyframes scroll-cycle {
+    0%   { transform: translateY(0%); }         /* Start at top */
+    10%  { transform: translateY(0%); }         /* Pause at top */
+    45%  { transform: translateY(-50%); }       /* Scroll down */
+    55%  { transform: translateY(-50%); }       /* Pause at bottom */
+    90%  { transform: translateY(0%); }         /* Scroll up */
+    100% { transform: translateY(0%); }         /* Pause at top again */
+  }
 .Banzai, .Ed, .Mufasa, .Nala,  .Pumbaa, .Rafiki,  .Sarabi, .Scar, .Shenzi, .Simba, .Timon, .Zazu {
     font-weight: 700;
 }
