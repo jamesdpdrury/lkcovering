@@ -15,47 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<script>
-  let scrollDirection = 'down';
-  const scrollSpeed = 0.3;      // pixels per frame
-  const scrollDelay = 20;     // milliseconds between scrolls
-  const pauseTime = 2000;     // pause time in milliseconds at the top
-  
-  let isPaused = false;
-  
-  function autoScroll() {
-    if (isPaused) return;
-  
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-  
-    if (scrollDirection === 'down') {
-      if (scrollTop + windowHeight >= documentHeight) {
-        scrollDirection = 'up';
-      } else {
-        window.scrollBy(0, scrollSpeed);
-      }
-    } else {
-      if (scrollTop <= 0) {
-        scrollDirection = 'down';
-        isPaused = true;
-        setTimeout(() => {
-          isPaused = false;
-          autoScroll();
-        }, pauseTime);
-        return;
-      } else {
-        window.scrollBy(0, -scrollSpeed);
-      }
-    }
-  
-    setTimeout(autoScroll, scrollDelay);
-  }
-  
-  // Start the scroll loop
-  autoScroll();
-  </script>
+
 <body>
   <div class="page" id="covering">
     
