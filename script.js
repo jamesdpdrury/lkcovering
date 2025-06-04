@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set an interval to reload the page every 45 minutes (2700000 milliseconds)
     setInterval(function() {
         window.location.reload();
-    }, 60000);
+    }, 600000);
 });
 
 
