@@ -126,12 +126,13 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 30px;
+    padding: 30px;
     z-index: 100;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     display: flex;
+    text-align: center;
 
 }
 #overlay img {
