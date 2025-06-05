@@ -327,6 +327,10 @@ display: none;
         width: 260px;
         margin: 0 auto;
     }
+    #overlay img {
+        width: 90%;
+        height: auto;
+    }
     .page {
         margin: -10px 0 0 0;
         width: calc(100% - 20px);
