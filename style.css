@@ -133,6 +133,7 @@ footer {
     justify-content: center;
     display: flex;
     text-align: center;
+    font-size: 25px;
 
 }
 #overlay img {
