@@ -378,8 +378,8 @@ display: none;
     }
     .walking_covers div, .standbys div, #notes, #afterWarmUp {
         display: flex;
-        justify-content: center;
-        text-align: center;
+        justify-content: start;
+        text-align: left;
     }
     .walking_covers .role, .standbys .role {
         width: calc((100% / 3) - 10px)!important;
