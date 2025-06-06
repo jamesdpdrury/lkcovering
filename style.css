@@ -327,6 +327,10 @@ display: none;
         width: 260px;
         margin: 0 auto;
     }
+    #notes, #afterWarmUp {
+        min-height: 18px;
+        text-align: left;
+    }
     #overlay {
         align-content: start;
     }
@@ -335,7 +339,7 @@ display: none;
         height: auto;
     }
     .page {
-        margin: -10px 0 0 0;
+        margin: -10px auto 0;
         width: calc(100% - 20px);
         padding: 10px;
         font-size: 15px;
@@ -354,8 +358,12 @@ display: none;
         width: calc((100% / 3) + 5px);
         min-height: 23px;
     }
+    .row2 div {
+        min-height: 18px;
+    }
     .splits {
         width: calc(100% - 20px);
+        max-width: -10px auto 0;
     }
     .top_right {
         width: 100%;
@@ -365,7 +373,7 @@ display: none;
     font-size: 16px;
     }
     .walking_covers div {
-        min-height: 23px;
+        min-height: 18px;
     }
     .walking_covers div, .standbys div, #notes, #afterWarmUp {
         display: flex;
