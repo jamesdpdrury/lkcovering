@@ -158,6 +158,8 @@ box-shadow: 0px 0px 19px -5px #000000;
 position: relative;
 line-height: 1.1;
 }
+.refresh {
+    display: none;}
 .role { width: calc((100% / 3) - 10px)!important;}
 .role, .cover {margin-left: -1px;}
 .role.bold-text {
@@ -317,6 +319,7 @@ display: none;
     }
     .holder {
         display: block;
+        margin-top: 30px;
     }
     .logo {
         text-align: center;
@@ -345,6 +348,17 @@ display: none;
         padding: 10px;
         font-size: 15px;
         box-shadow: 0px 0px 0px 0px;
+    }
+    .refresh {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        background: #000000;
+        color: #ffffff;
+        text-align: center;
+        width: calc(100% - 10px);
+        top: 0;
+        padding: 5px;
     }
     .role {
         width: calc((100% / 3) - 45px)!important;
