@@ -31,14 +31,17 @@
     
     <iframe style="display: none;" src="https://script.google.com/macros/s/AKfycbzb9CWBsFV6EUYuPME0VTpgnBLZc9yaFhFU2a2dIp1feEgJvXjSLMrsAcxBnDRmB_8wHQ/exec" id="data-iframe"></iframe>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Select all rows that contain a div with class 'name'
+      window.addEventListener("load", function () {
+        // Get all rows with class 'row'
         const rows = document.querySelectorAll(".row");
     
         rows.forEach(row => {
           const nameDiv = row.querySelector(".name");
-          if (nameDiv && nameDiv.textContent.trim() === "#N/A") {
-            row.style.display = "none"; // Hide the entire row
+          if (nameDiv) {
+            const text = nameDiv.textContent.trim();
+            if (text === "#N/A" || text === "" || text === "�") {
+              row.style.display = "none";
+            }
           }
         });
       });
