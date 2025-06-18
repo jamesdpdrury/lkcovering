@@ -33,17 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const coveringEl = document.getElementById("covering");
 const splitsEl = document.getElementById("splits");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Select all rows that contain a div with class 'name'
-    const rows = document.querySelectorAll(".row");
 
-    rows.forEach(row => {
-      const nameDiv = row.querySelector(".name");
-      if (nameDiv && nameDiv.textContent.trim() === "#N/A") {
-        row.style.display = "none"; // Hide the entire row
-      }
-    });
-  });
 
 
 
