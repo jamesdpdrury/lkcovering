@@ -1,28 +1,4 @@
-@media print {
-  /* Hide everything by default */
-  body * {
-    visibility: hidden;
-    animation:none;
-  }
 
-  /* Show only .page and its contents */
-  .page,
-  .page * {
-    visibility: visible;
-  }
-
-  /* Position pages correctly */
-  .page {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%!important;
-    margin: 0;
-    max-width:100%!important;
-    box-shadow:0px 0px 0px 0px;
-    page-break-after: always;
-  }
-}
 
 body {
     width: 100%;
@@ -41,7 +17,6 @@ background-image: url(Background.jpg);
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
-animation: scroll-cycle 60s ease-in-out infinite;
 }
 @keyframes scroll-cycle {
     0%   { transform: translateY(0%); }         /* Start at top */
@@ -117,6 +92,7 @@ footer {
     width: 100%;
     display: flex;
     height: auto;
+    animation: scroll-cycle 60s ease-in-out infinite;
 }
 .logo {
     width: calc(100% + 80px);
@@ -426,5 +402,52 @@ display: none;
     #version {
         right: 10px;
     top: 153px;
+    }
+}
+
+@media print {
+
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    html,
+    body {
+        background: white !important;
+        overflow: visible !important;
+    }
+
+    footer,
+    .refresh {
+        display: none !important;
+    }
+
+    .holder {
+        display: block !important;
+        animation: none !important;
+    }
+
+    .page,
+    .splits {
+        width: 794px !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        box-shadow: none !important;
+        background: white !important;
+        break-inside: avoid;
+    }
+
+    .page {
+        page-break-after: always;
+    }
+
+    .splits.display_splits {
+        page-break-before: always;
+        display: block !important;
+    }
+
+    .splits:not(.display_splits) {
+        display: none !important;
     }
 }
