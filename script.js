@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const coveringEl = document.getElementById("covering");
 const splitsEl = document.getElementById("splits");
 
-
+document.getElementById('year').textContent = new Date().getFullYear();
 
 
 
